@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: gray;
+    color: wheat;
+}
+header{
+    padding:2rem 1rem;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+
+}
+header h1{
+    margin-bottom: 1.5rem;
+    text-align: center;
+    color:darkgreen;
+}
+.new-task-form{
+    display: flex;
+}
+input,button{
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+}
+.new-task-input{
+    flex: 1 1 0%;
+    background:darkslategray;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-right: .5rem;
+    font-size: 1.3rem;
+}
+.new-task-submit{
+    background:rgb(79, 47, 73);
+    padding: 1rem;
+    border-radius: 1rem;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+main{
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    flex:1 1 0%;
+}
+.task-list{
+    padding: 1rem;
+}
+.task-list h2{
+    font-size: 1.5rem;
+    color:darkgreen;
+    margin-bottom: 1.5rem;
+}
+.tasks .task{
+    display: flex;
+    justify-content: space-between;
+    background:darkslategray;
+     margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    
+}
+.tasks .task .content {
+    flex:1 1 0%;
+}
+.tasks .task .content .text{
+    color: rgb(123, 120, 114);
+    font-size: 1.3rem;
+    display: block;
+    transition: .4s;
+    width: 100%;
+}
+.tasks .task .actions{
+    display: flex;
+    margin: 0 -0.5rem;
+}
+.tasks .task .actions button{
+    cursor: pointer;
+    margin: 0 0.5rem;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+}
